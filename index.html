@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Minato</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="img/logo.png" alt="logo">
+            <h1>Campo Minato</h1>
+        </div>
+        <div class="header-right">
+            <select name="" id="difficulty">
+                <option value="soft">Soft</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="play">Play</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="main-title">Seleziona il livello di difficoltà e genera la griglia</h2>
+            <div class="grid hidden"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Made with &hearts; by <a href="https://github.com/andreamorandi">Andrea</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

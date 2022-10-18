@@ -1,0 +1,144 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    width: 54%;
+    text-align: right;
+}
+
+header h1 {
+    font-size: calc(.75rem + 1.3vw);
+}
+
+header img {
+    width: calc(2rem + 1.75vw);
+    margin-left: 1rem;
+}
+
+header * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header #play {
+    margin: .75rem 1.5rem;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+header #difficulty {
+    margin: 0 1.5rem;
+    width: 7.5rem;
+    height: 1.5rem;
+}
+
+/* MAIN */
+main {
+    background-color: aquamarine;
+    width: 100%;
+    height: calc(100vh - 130px);
+    overflow: auto;
+}
+
+.main-title.hidden {
+    display: none;
+}
+
+.container {
+    height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 375px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.grid.hidden {
+    display: none;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.square.soft {
+    width: calc((100%) / 10);
+    height: calc((100%) / 10);
+}
+
+.square.medium {
+    width: calc((100%) / 9);
+    height: calc((100%) / 9);
+}
+
+.square.hard {
+    width: calc((100%) / 7);
+    height: calc((100%) / 7);
+}
+
+.square.clicked {
+    background-color: lightskyblue;
+}
+
+/* FOOTER */
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 576px) and (min-height: 576px) {
+    .grid {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 700px) {
+    .grid {
+        width: 550px;
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 992px) and (min-height: 820px) {
+    .grid {
+        width: 650px;
+        height: 650px;
+    }
+}
