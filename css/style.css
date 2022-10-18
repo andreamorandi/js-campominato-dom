@@ -57,6 +57,11 @@ main {
     overflow: auto;
 }
 
+.main-title {
+    display: block;
+    margin: auto;
+}
+
 .main-title.hidden {
     display: none;
 }
@@ -64,6 +69,7 @@ main {
 .container {
     height: calc(100vh - 130px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -74,6 +80,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-shrink: 0;
     width: 375px;
     height: 375px;
     margin: auto;
@@ -111,6 +118,10 @@ main {
     background-color: lightskyblue;
 }
 
+.square.bomb {
+    background-color: crimson;
+}
+
 /* FOOTER */
 footer {
     height: 50px;
@@ -122,21 +133,21 @@ footer p {
     margin-left: 1.5rem;
 }
 
-@media screen and (min-width: 576px) and (min-height: 576px) {
+@media screen and (min-width: 576px) and (min-height: 650px) {
     .grid {
         width: 450px;
         height: 450px;
     }
 }
 
-@media screen and (min-width: 768px) and (min-height: 700px) {
+@media screen and (min-width: 768px) and (min-height: 750px) {
     .grid {
         width: 550px;
         height: 550px;
     }
 }
 
-@media screen and (min-width: 992px) and (min-height: 820px) {
+@media screen and (min-width: 992px) and (min-height: 850px) {
     .grid {
         width: 650px;
         height: 650px;
